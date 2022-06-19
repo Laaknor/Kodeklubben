@@ -8,7 +8,7 @@ function registrerStemme (styrke: number, id: number) {
         velgerindeks = velger.indexOf(id)
     }
     ledX = Math.floor(velgerindeks / 5)
-    ledY = 4 - (velgerindeks - 0 * 5)
+    ledY = 4 - (velgerindeks - ledX * 5)
     led.plotBrightness(ledX, ledY, styrke)
 }
 input.onButtonPressed(Button.B, function () {
